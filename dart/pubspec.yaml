@@ -1,0 +1,11 @@
+name: store
+
+dependencies:
+  angular2: 2.0.0-beta.1
+  browser: any
+
+transformers:
+- angular2:
+    entry_points: web/main.dart
+- $dart2js:
+    commandLineOptions: [--trust-primitives, --trust-type-annotations]
